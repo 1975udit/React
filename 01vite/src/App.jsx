@@ -1,7 +1,7 @@
-
+import chai from './chai'
 function App() {
   return (
-    <h1>Hey, I am Udit Tyagi</h1>
+    <chai />
   )
 }
 
