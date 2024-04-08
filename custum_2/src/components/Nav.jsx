@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink , Link} from "react-router-dom"
+import { Link} from "react-router-dom"
 
 function Nav(){
     return (
@@ -11,28 +11,28 @@ function Nav(){
           <div className="hidden grow items-start lg:flex">
             <ul className="ml-12 inline-flex space-x-8">
               <li>
-                <NavLink
+                <Link
                   to="/"
                   className="text-sm font-semibold text-white hover:text-gray-900"
                 >
                   Home
-                </NavLink>
+                </Link>
               </li>
               <li>
-                <NavLink
+                <Link
                   href="/About"
                   className="text-sm font-semibold text-white hover:text-gray-900"
                 >
                   About
-                </NavLink>
+                </Link>
               </li>
               <li>
-                <NavLink
+                <Link
                   href="/Contact"
                   className="text-sm font-semibold text-white hover:text-gray-900"
                 >
                   Contact
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </div>
