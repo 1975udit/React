@@ -1,5 +1,5 @@
 import React from "react";
-import { Link} from "react-router-dom"
+import {NavLink, Link} from "react-router-dom"
 
 function Nav(){
     return (
@@ -19,16 +19,16 @@ function Nav(){
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/About"
-                  className="text-sm font-semibold text-white hover:text-gray-900"
+                <NavLink
+                  to="/About"
+                  className={({isActive}) => `text-sm ${isActive ? "text-gray-900" : "text-White"} font-semibold text-white hover:text-gray-900 ` }
                 >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li>
                 <Link
-                  href="/Contact"
+                  to="/Contact"
                   className="text-sm font-semibold text-white hover:text-gray-900"
                 >
                   Contact
